@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="./CSS/tickets.css">
+
+    <title>Book Tickets</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Homepage.html"><img src="./Images/Final Logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./Homepage.html">HOME</a></li>
+                    <li><a href="./hatchery.html">HATCHERY</a>
+    
+    
+                        <ul class="dropdown">
+                            <li><a href="./otherhatcheries.html">OTHER</a></li>
+                            <li><a href="./kosgoda.html">KOSGODA</a></li>
+                            <li><a href="./bentota.html">BENTOTA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./turtlecateg.html">TURTLES</a>
+                        <ul class="dropdown">
+                            <li><a href="./greenturtle.html">GREEN</a></li>
+                            <li><a href="./leatherback.html">LEATHERBACK</a></li>
+                            <li><a href="./hawksbill.html">HAWKSBILL</a></li>
+                            <li><a href="./oliveturtle.html">OLIVE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./threats.html">THREATS</a></li>
+                    <li><a href="./donate.html" target="_blank">DONATE</a>
+                        <ul class="dropdown">
+                            <li><a href="./tickets.html">TICKETS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Book Your Tickets</h1>
+        </div>
+    </section>
+
+    <section class="dates">
+        <h1>Book your dates</h1>
+            <p>Don't miss turtle-watching: Reserve now for an enchanting day!</p>
+
+        <!-- Dates Section -->
+        <div class="calender-body">
+        <div class="wrapper">
+            <header>
+                <p class="current-date">August 2023</p>
+                <div class="icons">
+                    <span id="back" class="symbols">&#10094;</span>
+                    <span id="next" class="symbols">&#10095;</span>
+                </div>
+            </header>
+            <div class="calender">
+                <ul class="weeks">
+                    <li>Sun</li>
+                    <li>Mon</li>
+                    <li>Tue</li>
+                    <li>Wed</li>
+                    <li>Thu</li>
+                    <li>Fri</li>
+                    <li>Sat</li>
+                </ul>
+                <ul class="days"></ul>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="people">
+            <h1>How many tickets?</h1>
+            <p>Create treasured memories with your loved ones! Gather your family and friends for an unforgettable experience!</p>
+
+            <form class="booking-form" id="booking-form" action="action">
+
+                <div class="dur">
+                    <h1>Duration</h1>
+                    <p>Choose your perfect duration and embark on an unforgettable experience!</p>
+    
+                    <select class="select-time" id="select-duration" multiple>
+                        <option selected class="selected">Pick a Time</option>
+                        <option>07.00 am - 08.00 am</option>
+                        <option>08.00 am - 09.00 am</option>
+                        <option>09.00 am - 10.00 am</option>
+                        <option class="peak">10.00 am - 11.00 am (Peak)</option>
+                        <option class="peak">11.00 am - 12.00 am (Peak)</option>
+                        <option class="peak">12.00 am - 01.00 pm (Peak)</option>
+                        <option>01.00 pm - 02.00 pm</option>
+                        <option>02.00 pm - 03.00 pm</option>
+                        <option class="peak">03.00 pm - 04.00 pm (Peak)</option>
+                        <option class="peak">04.00 pm - 05.00 pm (Peak)</option>
+                        <option class="peak">05.00 pm - 06.00 pm (Peak)</option>
+                    </select>
+                </div>
+
+                <div class="guest-select">
+                    <p>SL Adults</p>
+                    <input type="number" value="0" min="0" class="guest-input" id="sl-adults-input">
+                </div>
+
+                <div class="guest-select">
+                    <p>SL Child</p>
+                    <input type="number" value="0" min="0" id="sl-child-input">
+                </div>
+
+                <div class="guest-select">
+                    <p>Foreign Adults</p>
+                    <input type="number" value="0" min="0" id="foreign-adults-input">
+                </div>
+
+                <div class="guest-select">
+                    <p>Foreign Child</p>
+                    <input type="number" value="0" min="0" id="foreign-child-input">
+                </div>
+
+                <div class="guest-select">
+                    <p>Infants</p>
+                    <input type="number" value="0" min="0" id="infant-input">
+                </div>
+                
+
+            </form>
+            
+            <section class="pricing-table">
+                <h1>Pricing Lists</h1>
+                <div class="p-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Guests</th>
+                                <th>Normal</th>
+                                <th>Peak</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td data-ticket-type="Foreigner Adult">Foreigner Adult</td>
+                                    <td  data-normal-price="10">10 USD</td>
+                                    <td data-peak-price="13">13 USD</td>
+                                </tr>
+                                <tr>
+                                    <td data-ticket-type="Foreigner Child">Foreigner Child</td>
+                                    <td  data-normal-price="5">5 USD</td>
+                                    <td data-peak-price="8">8 USD</td>
+                                </tr>
+                                <tr>
+                                    <td data-ticket-type="SL Adult">SL Adult</td>
+                                    <td  data-normal-price="4">4 USD</td>
+                                    <td data-peak-price="6">6 USD</td>
+                                </tr>
+                                <tr>
+                                    <td data-ticket-type="SL Child">SL Child</td>
+                                    <td  data-normal-price="2">2 USD</td>
+                                    <td data-peak-price="3">3 USD</td>
+                                </tr>
+                                <tr>
+                                    <td data-ticket-type="Infant">Infant (Under 4 Years)</td>
+                                    <td  data-normal-price="FREE">FREE</td>
+                                    <td data-peak-price="FREE">FREE</td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+                </div>
+            </section> 
+
+            <div class="summary-table">
+                <h1>Summary</h1>
+                <table class="table">
+                    <tr>
+                        <td>Date</td>
+                        <td><span id="selected-date">< Current Date ></span></td>
+                    </tr>
+                    <tr>
+                        <td>Time</td>
+                        <td><span id="selected-time">08.00 am - 09.00 am</span></td>
+                    </tr>
+                    <tr>
+                        <td>Duration</td>
+                        <td>1 hr (01: Normal, 00: Peak)</td>
+                    </tr>
+                    <tr class="sub-head">
+                        <td>Tickets</td>
+                        <td>Charges</td>
+                    </tr>
+                    <tr id="sl-adults-row" class="hide">
+                        <td>0 SL Adult</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr id="sl-child-row" class="hide">
+                        <td>0 SL Child</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr id="foreign-adults-row">
+                        <td>0 Foreigner Adult</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr id="foreign-child-row" class="hide">
+                        <td>0 Foreigner Child</td>
+                        <td>$0</td>
+                    </tr>
+                    <tr id="infant-row" class="hide">
+                        <td>Infants</td>
+                        <td>$0</td>
+                    </tr>
+                    <tfoot>
+                        <tr>
+                            <td>Total Payables</td>
+                            <td id="totalPayables">$0.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+    </section>
+
+    <button type="submit" class="submit-btn">Confirm with Purchase</button>
+
+    
+    <section class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Visit US</h4>
+                    <ul>
+                        <li><a href="http://">Privacy Policy</a></li>
+                        <li><a href="http://">Terms and Condition</a></li>
+                        <li><a href="./donate.html" target="_blank">Donate</a></li>
+                        <li><a href="http://">Help</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Turtles</h4>
+                    <ul>
+                        <li><a href="./greenturtle.html">Green Turtle</a></li>
+                        <li><a href="./leatherback.html">Leatherback Turtle</a></li>
+                        <li><a href="./hawksbill.html">Hawksbill Turtle</a></li>
+                        <li><a href="oliveturtle.html">Olive Ridley Turtle</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>About US</h4>
+                    <div class="footer-right">
+                        <p>The Turtle Hatchery in Hikkaduwa nurtures and protects endangered sea turtles, ensuring their survival through conservation efforts and education.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Javascript/ticket.js"></script>
+    <script src="./Javascript/price.js"></script>
+</body>
+</html>

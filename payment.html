@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/payment.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Payment</title>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Homepage.html"><img src="./Images/Final Logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="./Homepage.html">HOME</a></li>
+                    <li><a href="./hatchery.html">HATCHERY</a>
+    
+    
+                        <ul class="dropdown">
+                            <li><a href="./otherhatcheries.html">OTHER</a></li>
+                            <li><a href="./kosgoda.html">KOSGODA</a></li>
+                            <li><a href="./bentota.html">BENTOTA</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./turtlecateg.html">TURTLES</a>
+                        <ul class="dropdown">
+                            <li><a href="./greenturtle.html">GREEN</a></li>
+                            <li><a href="./leatherback.html">LEATHERBACK</a></li>
+                            <li><a href="./hawksbill.html">HAWKSBILL</a></li>
+                            <li><a href="./oliveturtle.html">OLIVE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./threats.html">THREATS</a></li>
+                    <li><a href="./donate.html" target="_blank">DONATE</a>
+                        <ul class="dropdown">
+                            <li><a href="./tickets.html">TICKETS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Payment</h1>
+        </div>
+    </section>
+    <section class="card">
+        <form id="paymentForm" action="action">
+
+            <label for="cardnum">Card Number</label><br>
+            <input class="box1" type="number" name="number" id="number" placeholder="1234 1234 1234 1234" maxlength="16" required><br>
+
+            <div class="card1">
+                <label for="cardex">Card Expiry Date</label><br>
+                <input class="box2" type="month" name="month" id="month" placeholder="MM/YY" required min="2023-08" /><br>
+            </div>
+
+            <div class="card1">
+                <label for="CardCVC">Card CVC</label><br>
+                <input class="box2" type="cvc" name="cvc" id="CVC" placeholder="CVC" maxlength="3" required><br> 
+            </div><br>
+
+            <label for="name">Name on Card</label><br>
+            <input class="box1" type="text" name="cname" id="cname" placeholder="Enter Name on card" required><br>
+
+        </form>
+    </section>
+
+    <div class="summary" id="summarySection">
+      <section class="user-details-table">
+        <table class="user-details">
+            <tr>
+                <td>Name</td>
+                <td><span id="user-name">< Your Name ></span></td>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td id="user-mobile">< Mobile Number ></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td id="user-email">< Your E-mail ></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td id="user-gender">< Male/Female ></td>
+            </tr>
+        </table>
+    </section>
+      <section class="details-summary-table">
+        <table class="table">
+          <tr>
+            <td>Date</td>
+            <td>< Current Date ></td>
+          </tr>
+          <tr>
+            <td>Time</td>
+            <td>08.00 am - 09.00 am</td>
+          </tr>
+          <tr>
+            <td>Duration</td>
+            <td>1 hr (01: Normal, 00): Peak</td>
+          </tr>
+          <tr class="sub-head">
+            <td>Tickets</td>
+            <td>Charges</td>
+          </tr>
+          <tr class="hide" id="sl-adults-row">
+            <td data-ticket-type="SL Adult">1 SL Adult</td>
+            <td>$0</td>
+          </tr>
+          <tr class="hide">
+            <td data-ticket-type="SL Child">1 SL Child</td>
+            <td>$0</td>
+          </tr>
+          <tr id="foreign-adults-row">
+            <td data-ticket-type="Foreign Adult">1 Foreigner Adult</td>
+            <td>$0</td>
+          </tr>
+          <tr class="hide" id="foreign-child-row">
+            <td data-ticket-type="Foreign Child">1 Foreigner Child</td>
+            <td>$0</td>
+          </tr>
+          <tr class="hide" id="infant-row">
+            <td data-ticket-type="Infant">Infants</td>
+            <td>$0</td>
+          </tr>
+          <tfoot>
+            <tr>
+              <td>Total Payables</td>
+              <td id="totalPayables">$0</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+        
+      </div>
+      <a href="./confirmation.html"><button class="pay-btn" type="button" id="payButton" disabled>PAY</button></a>
+
+    <section class="footer">
+        <div class="container">
+            <div class="footer-row">
+                <div class="footer-col">
+                    <h4>Visit US</h4>
+                    <ul>
+                        <li><a href="http://">Privacy Policy</a></li>
+                        <li><a href="http://">Terms and Condition</a></li>
+                        <li><a href="./donate.html" target="_blank">Donate</a></li>
+                        <li><a href="http://">Help</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Turtles</h4>
+                    <ul>
+                        <li><a href="./greenturtle.html">Green Turtle</a></li>
+                        <li><a href="./leatherback.html">Leatherback Turtle</a></li>
+                        <li><a href="./hawksbill.html">Hawksbill Turtle</a></li>
+                        <li><a href="oliveturtle.html">Olive Ridley Turtle</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>About US</h4>
+                    <div class="footer-right">
+                        <p>The Turtle Hatchery in Hikkaduwa nurtures and protects endangered sea turtles, ensuring their survival through conservation efforts and education.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./Javascript/payment.js"></script>
+</body>
+</html>
